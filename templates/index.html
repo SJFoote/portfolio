@@ -35,35 +35,33 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Languages</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- First Container -->
-<section class="splash">
+<section id="splash" class="splash">
     <div class="container-fluid bg-1 text-center">
-        <h3 class="margin">Splash Page</h3>
-        <img src="{{ url_for('static', filename='img-1.jpg') }}">
-        <h3>I'm an adventurer</h3>
+        <h3>Spencer Foote</h3>
     </div>
 </section>
 
 <!-- Second Container -->
-<section class="About">
+<section id="about" class="About">
     <div class="container-fluid bg-1 text-center">
         <h3 class="margin">About</h3>
         <img src="{{ url_for('static', filename='img-1.jpg') }}">
-        <h3>I'm an adventurer</h3>
+        <h3>About me section</h3>
     </div>
 </section>
 
 <!-- Third Container -->
-<section class="languages">
+<section id="languages" class="languages">
     <div class="container-fluid bg-2 text-center">
         <h3 class="margin">Languages</h3>
         <p>
@@ -76,7 +74,7 @@
 </section>
 
 <!-- Fourth Container (Grid) -->
-<section class="projects">
+<section id="projects" class="projects">
     <div class="container-fluid bg-3 text-center">
         <h3 class="margin">Where To Find Me?</h3>
         <br />
@@ -110,7 +108,7 @@
 </section>
 
 <!-- Fifth Container -->
-<section class="languages">
+<section id="contact" class="contact">
     <div class="container-fluid bg-2 text-center">
         <h3 class="margin">Contact</h3>
         <p>
@@ -132,5 +130,7 @@
         <a href="https://www.w3schools.com">www.w3schools.com</a>
         </p>
     </footer>
+    <script src="scroll.js">      
+    </script>
 </body>
 </html>

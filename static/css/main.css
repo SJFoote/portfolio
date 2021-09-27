@@ -3,6 +3,12 @@ body {
     line-height: 1.8;
     color: #f5f6f7;
 }
+html {
+    scroll-behavior: smooth;
+}
+.spalsh h3{
+    z-index: 2;
+}
 p {
     font-size: 16px;
 }
@@ -10,16 +16,16 @@ p {
     margin-bottom: 45px;
 }
 .bg-1 {
-    background-color: #1abc9c; /* Green */
+    background-color: #1E3163; /* Navy */
     color: #ffffff;
 }
 .bg-2 {
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #2D46B9; /* Blue */
     color: #ffffff;
 }
 .bg-3 {
-    background-color: #ffffff; /* White */
-    color: #555555;
+    background-color: #F037A5; /* Pink */
+    color: #F8F8F8;
 }
 .bg-4 {
     background-color: #2f2f2f; /* Black Gray */
@@ -41,3 +47,4 @@ p {
 .navbar-nav li a:hover {
     color: #1abc9c !important;
 }
+
