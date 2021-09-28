@@ -8,14 +8,16 @@ html {
     scroll-behavior: smooth;
 }
 
-.hideme
-{
-    opacity:0;
+#splash {
+    height: 50%;
 }
 
-.splash h3{
-    z-index: 2;
-}
+
+/* .fadeinleft {
+	opacity:0;
+	margin-left:-300px;	
+	max-width:50%;
+} */
 
 p {
     font-size: 16px;

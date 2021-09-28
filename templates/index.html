@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Theme Simply Me</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script>
+    $(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fadeinleft').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+            }
+            
+        }); 
+    });
+});
+</script> -->
+    <title>Spencer Foote</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -47,19 +64,20 @@
 <!-- First Container -->
 <section id="splash" class="splash">
     <div class="container-fluid bg-1 text-center">
-        <div class="hideme"><h3>Spencer Foote</h3>
+        <div class="fadeinleft"><h3>Spencer Foote</h3>
         </div>
-        
-
     </div>
 </section>
 
 <!-- Second Container -->
 <section id="about" class="about">
     <div class="container-fluid bg-1 text-center">
-        <div class="hideme"><h3 class="margin">About</h3>
-            <img src="{{ url_for('static', filename='img-1.jpg') }}">
-            <h3>About me section</h3>
+        <h3 class="margin">About</h3>
+        <div class="hideme">
+            <div class="fadeinleft">Fade In
+                <img src="{{ url_for('static', filename='img-1.jpg') }}">
+                <h3>About me section</h3>
+            </div>
         </div>
         
     </div>
@@ -68,26 +86,29 @@
 <!-- Third Container -->
 <section id="languages" class="languages">
     <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">Languages</h3>
         <div class="hideme">
-            <h3 class="margin">Languages</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
-            </p>
+            <div class="fadeinleft">Fade In           
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+            </div> 
         </div>
-
     </div>
 </section>
 
 <!-- Fourth Container (Grid) -->
 <section id="projects" class="projects">
     <div class="container-fluid bg-3 text-center">
-        <div class="hideme"><h3 class="margin">Where To Find Me?</h3>
+        <h3 class="margin">Where To Find Me?</h3>
+        <div class="hideme">
+            <div class="hideme">Fade In</div>
             <br />
             <div class="row">
-                <div class="col-sm-4">
+                <div class="fadeinleft col-sm-4">
                     <h3>Project 1</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -95,7 +116,7 @@
                     </p>
                     <img class="thumbnail img-responsive" src="{{ url_for('static', filename='img-1.jpg') }}">
                 </div>
-                <div class="col-sm-4">
+                <div class="fadeinleft col-sm-4">
                     <h3>Project 2</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -103,7 +124,7 @@
                     </p>
                     <img class="thumbnail img-responsive" src="{{ url_for('static', filename='img-1.jpg') }}">
                 </div>
-                <div class="col-sm-4">
+                <div class="fadeinleft col-sm-4">
                     <h3>Project 3</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -119,7 +140,9 @@
 <!-- Fifth Container -->
 <section id="contact" class="contact">
     <div class="container-fluid bg-2 text-center">
-        <div class="hideme"><h3 class="margin">Contact</h3>
+        <h3 class="margin">Contact</h3>
+        <div class="hideme">
+            <div class="col fadeinleft">Fade In</div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -141,9 +164,8 @@
         <a href="https://www.w3schools.com">www.w3schools.com</a>
         </p>
     </footer>
-    <script src="scroll.js">      
-    </script>
-    <script src="fade.js">      
-    </script>
+    <script src="fade.js"></script>
+    <script src="scroll.js"></script>
+    
 </body>
 </html>
